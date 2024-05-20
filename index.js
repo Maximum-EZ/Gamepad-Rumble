@@ -128,7 +128,7 @@ function handleRumble(gamepad) {
   if (rumbleOnButtonPress.checked) {
     if (gamepad.buttons.some((button) => button.value > 0)) {
       gamepad.vibrationActuator.playEffect("dual-rumble", {
-        startDelay: 2,
+        startDelay: 0,
         duration: 25,
         weakMagnitude: 1.0,
         strongMagnitude: 1.0,
