@@ -130,8 +130,8 @@ function handleRumble(gamepad) {
       gamepad.vibrationActuator.playEffect("dual-rumble", {
         startDelay: 0,
         duration: 25,
-        weakMagnitude: 0.1,
-        strongMagnitude: 1.0,
+        weakMagnitude: 0,
+        strongMagnitude: 0,
       });
     }
   }
