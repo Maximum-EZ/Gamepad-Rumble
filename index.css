@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+html {
+  font-family: Roboto;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  background: rgb(122, 0, 69);
+  color: rgb(229, 229, 229);
+}
+h1 {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 3.5em;
+}
+.center {
+  text-align: center;
+}
+.controller-status {
+  font-weight: bold;
+  text-align: center;
+}
+#controller-connected {
+  font-size: 1.2rem;
+}
+#controller-connected-area {
+  display: none;
+}
+#controller-not-connected-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#rumble-on-button-press-area {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.loader {
+  display: inline-block;
+  border: 3px solid rgb(229, 229, 229);
+  border-radius: 50%;
+  border-top: 3px solid transparent;
+  width: 16px;
+  height: 16px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(min-content, max-content));
+  grid-gap: 15px;
+  justify-content: center;
+  justify-items: start;
+}
+.button {
+  border: 1px solid rgb(229, 229, 229);
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  z-index: -1;
+}
+.button-text-area {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button-text-area {
+  z-index: 100;
+}
+.selected-button {
+  fill: rgb(73, 0, 0);
+}
+.axis-name {
+  font-weight: bolder;
+}
